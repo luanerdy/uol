@@ -1,0 +1,54 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 72px;
+}
+
+.login > div {
+    height: 300px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.login .logo {
+    width: 130px;
+    height: 92px;
+}
+
+.login input {
+    width: 260px;
+    height: 54px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login input::placeholder {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, .3);
+}
+
+.login form {
+    height: 114px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login form button {
+    width: 110px;
+    height: 45px;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #696969;
+    font-size: 18px;
+}
