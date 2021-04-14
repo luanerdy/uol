@@ -18,13 +18,14 @@
 		<link rel="icon" href="assets/img/favicon.png" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/block/login.css" />
 		<link rel="stylesheet" href="assets/css/block/loading.css" />
 		<link rel="stylesheet" href="assets/css/block/topbar.css" />
+		<link rel="stylesheet" href="assets/css/block/chat.css" />
 		<link rel="stylesheet" href="assets/css/block/textfield.css" />
 		<link rel="stylesheet" href="assets/css/global.css" />
 		<title>Bate-papo UOL</title>
@@ -67,9 +68,30 @@
 			/>
 			<ion-icon name="people"></ion-icon>
 		</div>
-		<div class="chat"></div>
+		<div class="chat">
+			<div class="msg msg-status">
+				<p>
+					<span class="time">(09:21:45)</span>
+					<strong class="user">João</strong> entra na sala...
+				</p>
+			</div>
+			<div class="msg msg-public">
+				<p>
+					<span class="time">(09:22:38)</span>
+					<strong class="user">Maria</strong> para 
+					<strong class="user">João</strong>: Oi João :)
+				</p>
+			</div>
+			<div class="msg msg-private">
+				<p>
+					<span class="time">(09:22:48)</span>
+					<strong class="user">João</strong> reservadamente para 
+					<strong class="user">Maria</strong>: Oi Gatinha, quer tc?
+				</p>
+			</div>
+		</div>
 		<div class="textfield">
-			<input type="text" placeholder="Escreva aqui..." autofocus/>
+			<input type="text" placeholder="Escreva aqui..." autofocus />
 			<ion-icon name="paper-plane-outline"></ion-icon>
 		</div>
 	</body>
