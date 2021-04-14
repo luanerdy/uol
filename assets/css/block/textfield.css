@@ -21,6 +21,16 @@
     height: 100%;
 }
 
+.textfield input::placeholder {
+    color: rgba(0, 0, 0, .6);
+}
+
+.textfield p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #909090;
+}
+
 .textfield ion-icon {
     font-size: 26px;
     cursor: pointer;

@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/block/login.css" />
 		<link rel="stylesheet" href="assets/css/block/loading.css" />
+		<link rel="stylesheet" href="assets/css/block/menu.css" />
 		<link rel="stylesheet" href="assets/css/block/topbar.css" />
 		<link rel="stylesheet" href="assets/css/block/chat.css" />
 		<link rel="stylesheet" href="assets/css/block/textfield.css" />
@@ -68,6 +69,54 @@
 			/>
 			<ion-icon name="people"></ion-icon>
 		</div>
+
+		<div class="menu-container hidden">
+			<div class="menu">
+				<p class="title">Escolha um contato para enviar mensagem:</p>
+				<div class="options">
+					<div class="selected">
+						<div>
+							<ion-icon name="people"></ion-icon>
+							<span>Todos</span>
+						</div>
+						<ion-icon name="checkmark"></ion-icon>
+					</div>
+					<div>
+						<div>
+							<ion-icon name="person-circle"></ion-icon>
+							<span>João</span>
+						</div>
+						<ion-icon name="checkmark"></ion-icon>
+					</div>
+					<div>
+						<div>
+							<ion-icon name="person-circle"></ion-icon>
+							<span>Maria</span>
+						</div>
+						<ion-icon name="checkmark"></ion-icon>
+					</div>
+				</div>
+				<p class="title">Escolha a visibilidade:</p>
+				<div class="options">
+					<div class="selected">
+						<div>
+							<ion-icon name="lock-open"></ion-icon>
+							<span>Público</span>
+						</div>
+						<ion-icon name="checkmark"></ion-icon>
+					</div>
+					<div>
+						<div>
+							<ion-icon name="lock-closed"></ion-icon>
+							<span>Reservadamente</span>
+						</div>
+						<ion-icon name="checkmark"></ion-icon>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wall hidden"></div>
+
 		<div class="chat">
 			<div class="msg msg-status">
 				<p>
@@ -78,20 +127,24 @@
 			<div class="msg msg-public">
 				<p>
 					<span class="time">(09:22:38)</span>
-					<strong class="user">Maria</strong> para 
+					<strong class="user">Maria</strong> para
 					<strong class="user">João</strong>: Oi João :)
 				</p>
 			</div>
 			<div class="msg msg-private">
 				<p>
 					<span class="time">(09:22:48)</span>
-					<strong class="user">João</strong> reservadamente para 
+					<strong class="user">João</strong> reservadamente para
 					<strong class="user">Maria</strong>: Oi Gatinha, quer tc?
 				</p>
 			</div>
 		</div>
+
 		<div class="textfield">
-			<input type="text" placeholder="Escreva aqui..." autofocus />
+			<div>
+				<input type="text" placeholder="Escreva aqui..." autofocus />
+				<p>Enviando para Maria (reservadamente)</p>
+			</div>
 			<ion-icon name="paper-plane-outline"></ion-icon>
 		</div>
 	</body>
