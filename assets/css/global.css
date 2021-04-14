@@ -4,6 +4,7 @@ body {
     max-width: 600px;
     height: 100vh;
     margin: 0 auto;
+    user-select: none;
 }
 
 .hidden {
