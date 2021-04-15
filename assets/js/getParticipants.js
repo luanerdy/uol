@@ -6,6 +6,6 @@ function getParticipants() {
             renderParticipants(participants);
         })
         .catch(error => {
-            console.error(error.response);
+            console.error(error);
         });
 }

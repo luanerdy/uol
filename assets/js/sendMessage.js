@@ -12,7 +12,6 @@ function sendMessage(event) {
     }
     axios.post('https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/messages', data)
         .then(response => {
-            console.log(`status: ${response.status} dados: ${response.data}`);
             message.value = '';
         })
         .catch(error => {

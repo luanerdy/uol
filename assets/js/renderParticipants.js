@@ -21,8 +21,13 @@ function renderParticipants(participants) {
     });
     const participantsList = participantsDiv.children;
     addListeners(participantsList);
+    let seletor;
     if(selecionado !== null) {
-        const selecionadoDiv = document.querySelector(`[data-name=${selecionado}]`);
-        selecionadoDiv.classList.add('selected')
+        seletor = `[data-name=${selecionado}]`;
     }
+    else {
+        seletor = `[data-name="Todos"]`;
+    }
+    const selecionadoDiv = document.querySelector(seletor);
+    selecionadoDiv.classList.add('selected');
 }
