@@ -1,7 +1,8 @@
+let participantsDiv = document.querySelector('.participants');
+let selecionado = null;
 function renderParticipants(participants) {
-    const participantsDiv = document.querySelector('.participants');
     participantsDiv.innerHTML = `
-        <div class="selected">
+        <div data-name="Todos">
             <div>
                 <ion-icon name="people"></ion-icon>
                 <span>Todos</span>
@@ -10,7 +11,7 @@ function renderParticipants(participants) {
         </div>`;
     participants.forEach(participant => {
         participantsDiv.innerHTML += `
-            <div>
+            <div data-name=${participant.name}>
                 <div>
                     <ion-icon name="person-circle"></ion-icon>
                     <span>${participant.name}</span>
@@ -18,4 +19,10 @@ function renderParticipants(participants) {
                 <ion-icon name="checkmark"></ion-icon>
             </div>`;
     });
+    const participantsList = participantsDiv.children;
+    addListeners(participantsList);
+    if(selecionado !== null) {
+        const selecionadoDiv = document.querySelector(`[data-name=${selecionado}]`);
+        selecionadoDiv.classList.add('selected')
+    }
 }

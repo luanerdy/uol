@@ -76,15 +76,15 @@
 				<div class="options participants">
 				</div>
 				<p class="title">Escolha a visibilidade:</p>
-				<div class="options">
-					<div class="selected">
+				<div class="options types">
+					<div class="selected" data-type="message">
 						<div>
 							<ion-icon name="lock-open"></ion-icon>
 							<span>Público</span>
 						</div>
 						<ion-icon name="checkmark"></ion-icon>
 					</div>
-					<div>
+					<div data-type="private_message">
 						<div>
 							<ion-icon name="lock-closed"></ion-icon>
 							<span>Reservadamente</span>
@@ -101,10 +101,10 @@
 
 		<div class="textfield">
 			<div>
-				<input type="text" placeholder="Escreva aqui..." autofocus />
+				<input type="text" placeholder="Escreva aqui..." onkeyup="sendMessage(event)" autofocus />
 				<p>Enviando para Maria (reservadamente)</p>
 			</div>
-			<ion-icon name="paper-plane-outline"></ion-icon>
+			<ion-icon name="paper-plane-outline" onclick="sendMessage(event)"></ion-icon>
 		</div>
 
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -115,5 +115,7 @@
 		<script src="assets/js/sideMenu.js"></script>
 		<script src="assets/js/getParticipants.js"></script>
 		<script src="assets/js/renderParticipants.js"></script>
+		<script src="assets/js/selectMsgOptions.js"></script>
+		<script src="assets/js/sendMessage.js"></script>
 	</body>
 </html>

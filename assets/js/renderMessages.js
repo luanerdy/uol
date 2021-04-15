@@ -30,5 +30,6 @@ function renderMessages(messages) {
                 </div>`;
 		}
 	});
+    verifyPrivacy();
     chat.scrollTo(0, chat.scrollHeight);
 }
