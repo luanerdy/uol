@@ -29,5 +29,7 @@ function renderParticipants(participants) {
         seletor = `[data-name="Todos"]`;
     }
     const selecionadoDiv = document.querySelector(seletor);
-    selecionadoDiv.classList.add('selected');
+    if(selecionadoDiv !== null) {
+        selecionadoDiv.classList.add('selected');
+    }
 }
