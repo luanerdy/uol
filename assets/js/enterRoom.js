@@ -17,10 +17,12 @@ function enterRoom() {
         .then(response => {
             console.log('Conectado com sucesso');
             setTimeout(hideLoader, 1500);
+            setInterval(keepConnection, 5000);
         })
         .catch(error => {
             if(error.response.status === 409) {
-                console.log('Nome de usuário indisponível');
+                alert('Nome de usuário indisponível');
+                location.reload();
             }
         });
 }
