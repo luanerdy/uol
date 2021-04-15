@@ -73,28 +73,7 @@
 		<div class="menu-container hidden">
 			<div class="menu">
 				<p class="title">Escolha um contato para enviar mensagem:</p>
-				<div class="options">
-					<div class="selected">
-						<div>
-							<ion-icon name="people"></ion-icon>
-							<span>Todos</span>
-						</div>
-						<ion-icon name="checkmark"></ion-icon>
-					</div>
-					<div>
-						<div>
-							<ion-icon name="person-circle"></ion-icon>
-							<span>João</span>
-						</div>
-						<ion-icon name="checkmark"></ion-icon>
-					</div>
-					<div>
-						<div>
-							<ion-icon name="person-circle"></ion-icon>
-							<span>Maria</span>
-						</div>
-						<ion-icon name="checkmark"></ion-icon>
-					</div>
+				<div class="options participants">
 				</div>
 				<p class="title">Escolha a visibilidade:</p>
 				<div class="options">
@@ -118,26 +97,6 @@
 		<div class="wall hidden" onclick="hideMenu()"></div>
 
 		<div class="chat">
-			<div class="msg msg-status">
-				<p>
-					<span class="time">(09:21:45)</span>
-					<strong class="user">João</strong> entra na sala...
-				</p>
-			</div>
-			<div class="msg msg-public">
-				<p>
-					<span class="time">(09:22:38)</span>
-					<strong class="user">Maria</strong> para
-					<strong class="user">João</strong>: Oi João :)
-				</p>
-			</div>
-			<div class="msg msg-private">
-				<p>
-					<span class="time">(09:22:48)</span>
-					<strong class="user">João</strong> reservadamente para
-					<strong class="user">Maria</strong>: Oi Gatinha, quer tc?
-				</p>
-			</div>
 		</div>
 
 		<div class="textfield">
@@ -154,5 +113,7 @@
 		<script src="assets/js/keepConnection.js"></script>
 		<script src="assets/js/enterRoom.js"></script>
 		<script src="assets/js/sideMenu.js"></script>
+		<script src="assets/js/getParticipants.js"></script>
+		<script src="assets/js/renderParticipants.js"></script>
 	</body>
 </html>

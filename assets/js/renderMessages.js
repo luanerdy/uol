@@ -1,4 +1,4 @@
-function renderMessages() {
+function renderMessages(messages) {
 	const chat = document.querySelector('.chat');
 	chat.innerHTML = '';
 	messages.forEach((message) => {
@@ -30,4 +30,5 @@ function renderMessages() {
                 </div>`;
 		}
 	});
+    chat.scrollTo(0, chat.scrollHeight);
 }
