@@ -18,6 +18,7 @@ function enterRoom() {
             console.log('Conectado com sucesso');
             setTimeout(hideLoader, 1500);
             setInterval(keepConnection, 5000);
+            setInterval(getMessages, 3000);
         })
         .catch(error => {
             if(error.response.status === 409) {
