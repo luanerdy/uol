@@ -1,9 +1,11 @@
 .chat {
     padding: 100px 0;
     width: 100%;
+    max-width: 600px;
     height: 100vh;
     overflow: scroll;
     background-color: #f3f3f3;
+    overflow-x: hidden;
 }
 
 .chat .msg {
@@ -13,6 +15,11 @@
     margin-bottom: 4px;
     user-select: text;
     line-height: 16px;
+}
+
+.msg p {
+    max-width: 600px;
+    word-wrap: break-word;
 }
 
 .chat .msg-status {
