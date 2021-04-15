@@ -67,7 +67,7 @@
 				alt="Logotipo bate-papo UOL"
 				class="logo"
 			/>
-			<ion-icon name="people"></ion-icon>
+			<ion-icon name="people" onclick="showMenu()"></ion-icon>
 		</div>
 
 		<div class="menu-container hidden">
@@ -115,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wall hidden"></div>
+		<div class="wall hidden" onclick="hideMenu()"></div>
 
 		<div class="chat">
 			<div class="msg msg-status">
@@ -147,5 +147,7 @@
 			</div>
 			<ion-icon name="paper-plane-outline"></ion-icon>
 		</div>
+
+		<script src="assets/js/sideMenu.js"></script>
 	</body>
 </html>
