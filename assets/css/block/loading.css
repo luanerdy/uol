@@ -1,8 +1,10 @@
 .loading {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: white;
     padding-top: 72px;
+    z-index: 30;
 }
 
 .loading > div {
