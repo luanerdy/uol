@@ -23,10 +23,8 @@ function enterRoom() {
             setInterval(getParticipants, 3000);
         })
         .catch(error => {
-            if(error.response.status === 409) {
-                alert('Nome de usuário indisponível');
-                location.reload();
-            }
+            location.reload();
+            alert('Nome de usuário indisponível');
         });
 }
 
